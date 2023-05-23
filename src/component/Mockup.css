@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .carrucel {
+    padding: 5rem;
+    background-image: url(img/fondo4.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .box {
+    height: 300px;
+  }
+  
+  #box2 {
+    background-image: url(img/carrucel2.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
+  
+  #box3 {
+    background-image: url(img/carrucel3.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
+  
+  #box4 {
+    background-image: url(img/carrucel4.svg);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+  
+  #box5 {
+    background-image: url(img/carrucel5.svg);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+  }
+  
+  #box6 {
+    background-image: url(img/carrucel6.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #box7 {
+    background-image: url(img/carrucel7.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #box8 {
+    background-image: url(img/carrucel8.svg);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+  }
+  
+  #box9 {
+    background-image: url(img/carrucel9.svg);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+  }
+  
+  #box10 {
+    background-image: url(img/carrucel10.svg);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+  }
+  
+  #box11 {
+    background-image: url(img/carrucel11.svg);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+  
+  }
+  
+  #box12 {
+    background-image: url(img/carrucel12.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #box13 {
+    background-image: url(img/carrucel13.svg);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+  }
+  
+  #box14 {
+    background-image: url(img/carrucel14.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #box15 {
+    background-image: url(img/carrucel15.svg);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+  
+  .box p {
+    text-align: center;
+    margin-top: 75%;
+  }
+  
+  .slick-slide div {
+    margin: 0 1rem;
+  }
+  
+  .slick-next{
+    right: -40px !important;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: black !important;
+  }
+  
+  .slick-dots li button:before {
+    color: black !important;
+    font-size: 1rem !important;
+    top: 2rem !important;
+  }
