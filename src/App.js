@@ -1,10 +1,12 @@
 import './App.css';
-import Carrusel from './component/Carrusel';
+import Home from './Routes/Home';
 
 function App() {
   return (
     <div className="App">
-      <Carrusel />
+      <Routes>
+        <Route element={<Home />} />
+      </Routes>
     </div>
   );
 }

@@ -1,207 +1,38 @@
-*, ::before, ::after {
-  box-sizing: inherit;
-  margin: 0;
+.App {
+  text-align: center;
 }
 
-html{
-  box-sizing: border-box;
-  background-image: url("./pic/3.jpg");
-  background-size: cover;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.main-section{
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.carousel_content{
-  padding: 20px;
-  height: 600px;
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
-
-.cards_content{
-  width: 100%;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-main#carousel{
-  width: 100%;
-  height: 480px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  perspective: 600px;
-  --items: 5;
-  --midle: 3;
-  --position: 1;
-  pointer-events: none;
+.App-link {
+  color: #61dafb;
 }
 
-div.item{
-  padding: 10px;
-  position: absolute;
-  width: 300px;
-  height: 400px;
-  --r: calc(var(--position) - var(--offset));
-  --abs: max(calc(var(--r) * -1), var(--r));
-  transition: all 0.25s linear;
-  transform: rotateY(calc(-10deg * var(--r)))
-    translateX(calc(-300px * var(--r)));
-  z-index: calc((var(--position) - var(--abs)));
-}
-
-div.item:nth-of-type(1){
-  --offset: 1;
-  background-color: rgba(255, 255, 255, 0.055);
-}
-div.item:nth-of-type(2){
-  --offset: 2;
-  background-color: rgba(255, 255, 255, 0.055);
-}
-div.item:nth-of-type(3){
-  --offset: 3;
-  background-color: rgba(255, 255, 255, 0.055);
-}
-div.item:nth-of-type(4){
-  --offset: 4;
-  background-color: rgba(255, 255, 255, 0.055);
-}
-div.item:nth-of-type(5){
-  --offset: 5;
-  background-color: rgba(15, 15, 15, 0.055);
-}
-
-.pos1{
-  --position: 1;
-}
-.pos2{
-  --position: 2;
-}
-.pos3{
-  --position: 3;
-}
-.pos4{
-  --position: 4;
-}
-.pos5{
-  --position: 5;
-}
-
-
-.navinput{
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background-color: gray;
-  border: none;
-}
-
-.buttons_groups{
-  width: 140px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.activeButton{
-  width: 20px;
-  height: 20px;
-  background-color: rgb(90, 90, 90);
-  border-radius: 10px;
-  border: none;
-}
-
-.head_card{
-  color: #fff;
-  background-color: #ffffff1e;
-  border-radius: 5px;
-  padding: 4px;
-  height: 10%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2px;
-}
-
-.body_card1{
-  background-color: #ffffff1e;
-  border-radius: 5px;
-  padding: 4px;
-  height: 80%;
-  margin-bottom: 2px;
-  background-image: url(./pic/2.jpg);
-  background-size: 180%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.body_card2{
-  background-color: #ffffff1e;
-  border-radius: 5px;
-  padding: 4px;
-  height: 80%;
-  margin-bottom: 2px;
-  background-image: url(./pic/4.jpg);
-  background-size: 165%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.body_card3{
-  background-color: #ffffff1e;
-  border-radius: 5px;
-  padding: 4px;
-  height: 80%;
-  margin-bottom: 2px;
-  background-image: url(./pic/5.jpg);
-  background-size: 165%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.body_card4{
-  background-color: #ffffff1e;
-  border-radius: 5px;
-  padding: 4px;
-  height: 80%;
-  margin-bottom: 2px;
-  background-image: url(./pic/1.jpeg);
-  background-size: 190%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.body_card5{
-  background-color: #ffffff1e;
-  border-radius: 5px;
-  padding: 4px;
-  height: 80%;
-  margin-bottom: 2px;
-  background-image: url(./pic/9.jpg);
-  background-size: 165%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.photo{
-  width: 100%;
-
-}
-
-.footer_card{
-  color: #fff;
-  background-color: #ffffff1e;
-  border-radius: 5px;
-  padding: 4px;
-  height: 10%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
