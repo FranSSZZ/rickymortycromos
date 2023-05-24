@@ -2,23 +2,23 @@ import React, { useState } from "react";
 import { AppBar, Button, Tab, Tabs, Toolbar, Typography, useMediaQuery, useTheme } from "@mui/material";
 import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
 import DrawerComp from "./Drawer";
-import Form from "./Form"; // Importa el componente del formulario
+import Form from "./Form";
+import "./Header.css";
+
 
 const Header = () => {
   const [value, setValue] = useState();
-  const [showForm, setShowForm] = useState(false); // Estado para mostrar/ocultar el formulario, inicializado en false
+  const [showForm, setShowForm] = useState(false);
   const theme = useTheme();
-  console.log(theme);
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  console.log(isMatch);
 
   const handleLoginClick = () => {
-    setShowForm(true); // Muestra el formulario cuando se hace clic en el botón "Login"
+    setShowForm(true);
   };
 
   return (
     <React.Fragment>
-      <AppBar sx={{ background: "#063970" }}>
+      <AppBar>
         <Toolbar>
           <AddBusinessRoundedIcon sx={{ transform: "scale(2)" }} />
           {isMatch ? (
@@ -37,10 +37,9 @@ const Header = () => {
                 value={value}
                 onChange={(e, value) => setValue(value)}
               >
-                <Tab label="Products" />
-                <Tab label="Services" />
-                <Tab label="About Us" />
-                <Tab label="Contact" />
+                <Tab label="Productos" />
+                <Tab label="Cromos" />
+                <Tab label="Contacto" />
               </Tabs>
               <Button sx={{ marginLeft: "auto" }} variant="contained" onClick={handleLoginClick}>
                 Login
@@ -52,7 +51,7 @@ const Header = () => {
           )}
         </Toolbar>
       </AppBar>
-      {showForm && <Form />} {/* Renderiza el formulario solo si showForm es true */}
+      {showForm && <Form />}
     </React.Fragment>
   );
 };

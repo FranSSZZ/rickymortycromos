@@ -1,0 +1,21 @@
+.header {
+    background: #063970;
+  }
+  
+  .logo {
+    transform: scale(2);
+  }
+  
+  .logo-text {
+    font-size: 2rem;
+    padding-left: 10%;
+  }
+  
+  .tabs {
+    margin-left: auto;
+  }
+  
+  .login-button {
+    margin-left: auto;
+    margin-left: 10px;
+  }
